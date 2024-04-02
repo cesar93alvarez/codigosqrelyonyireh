@@ -1,0 +1,118 @@
+/*--------
+Fuentes
+----------*/
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap");
+
+/*--------
+Global CSS
+----------*/
+:root {
+   --White:#FFFFFF;
+   --Purple:#00a6ef;
+   --Pink:#00a6ef;
+   --Greey:#F3F3F3;
+   --RGBA: rgba(0,0,0,.1);
+   --Gradient:linear-gradient(90deg, var(--Purple), var(--Pink));
+}
+
+* {
+   box-sizing: border-box;
+   font-family: 'Comic Neue', cursive;
+   background: var(--Gradient);
+}
+
+::selection {
+   background: var(--Pink);
+   color: var(--White);
+}
+
+/*-----------
+Principal
+------------*/
+.contenedor {
+   width: 400px;
+   height: 95vh;
+   margin: 0 auto;
+   padding: 20px;
+   border-radius: 10px;
+   background: var(--White);
+   box-shadow: -1px -1px 20px var(--Greey);
+}
+
+form {
+   align-items: center;
+   background: var(--White);
+   justify-content: center;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.form-titulo {
+   font-size: 24px;
+   background: var(--White);
+   color: var(--Purple);
+}
+
+.text-input {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: 1px solid var(--Pink);
+   border-radius: 5px;
+   background: var(--White);
+   font-size: 15px;
+   height: 32px;
+   font-weight: 500;
+   outline: none;
+}
+
+.text-input::placeholder {
+   color: var(--Purple);
+}
+
+button {
+   padding: 10px 20px;
+   cursor: pointer;
+   margin: 20px;
+   font-size: 15px;
+   font-weight: 600;
+   outline: none;
+   background: var(--Gradient);
+   color: var(--White);
+   border: none;
+   border-radius: 15px;
+   box-shadow: 0 1px 12px var(--RGBA);
+   transition: all .3s linear;
+}
+
+button:hover {
+   transform: scale(1.1);
+}
+
+.btn-descargar {
+   display: none;
+}
+
+canvas {
+   display: none;
+}
+
+img {
+   height: 180px;
+   border: none;
+}
+
+.qrcode {
+   background: var(--White);
+}
+
+/*----------
+Media
+------------*/
+
+@media(max-width: 910px) {
+   .contenedor {
+      width: 100%;
+   }
+}

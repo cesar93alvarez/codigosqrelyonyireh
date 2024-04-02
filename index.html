@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Generador de código QR</title>
+</head>
+<body>
+    <!-- Principal -->
+    <main>
+        <div class="contenedor">
+            <form>
+                <img src="./imagenes/logo.jpg" alt="Ejemplo de imagen">
+                <h1 class="form-titulo">Generador de Código QR</h1>
+                <p class="text-aviso"></p>
+                <input type="number" class="text-input" placeholder="Ingresa el documento para generar el código QR">
+                <button class="btn-generar">Generar Código QR</button>
+                <div class="qrcode"></div>
+                <button class="btn-descargar">Descargar Código QR</button>                              
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/qrious"></script>
+    <script src="./js/generador.js"></script>
+</body>
+</html>
